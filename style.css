@@ -96,3 +96,31 @@ a:hover{text-decoration:underline}
 html {
   scroll-behavior: smooth;
 }
+
+.contact p {
+  margin: 6px 0;
+  color: var(--muted);
+}
+.contact a {
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.site-footer {
+  padding: 20px 0;
+  text-align: center;
+  background: #0f1118;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.site-footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
