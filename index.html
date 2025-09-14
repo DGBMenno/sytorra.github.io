@@ -1,27 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sytorra</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Software engineering and desktop app development. Contact Sytorra." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <!-- Open Graph (nice link previews) -->
+  <meta property="og:title" content="Sytorra" />
+  <meta property="og:description" content="Custom software solutions" />
+  <meta property="og:image" content="assets/img/Logo_with_name.jpg" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
-  <header>
-    <h1>Sytorra</h1>
-    <p>Software • Automation • Technologyy</p>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top">
+        <img src="assets/img/Logo_inverted.png" alt="Sytorra logo" />
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">What I Do</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>About</h2>
-    <p>I work on software engineering and automation projects. This site explains what I do and how you can contact me.</p>
+  <!-- Hero -->
+  <section class="hero" id="top" aria-label="Hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Sytorra software solutions</h1>
+        <p>I build practical and custom software solutions. Clear scope, robust implementation, hands-on delivery.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#services">See what I do</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/img/ProfilePic1.jpg"
+             alt="Abstract technology background" loading="lazy" />
+      </div>
+    </div>
+  </section>
 
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@sytorra.com">info@sytorra.com</a></p>
-  </main>
+  <!-- About -->
+  <section class="section" id="about" aria-label="About">
+    <div class="container about-grid">
+      <img class="avatar" src="assets/img/ProfilePic2.jpg" alt="Photo of Menno Weijers" />
+      <div>
+        <h2>About</h2>
+        <p>
+          I’m Menno Weijers. I work on software engineering projects within embedded systems, desktop applications and IoT systems.
+          I like simple, reliable systems with clean interfaces and clear diagnostics.
+        </p>
+        <ul class="bullets">
+          <li>Languages/Tools: C++, C#, Python, HTML, Git</li>
+          <li>Domains: Embedded, tooling, small web apps</li>
+          <li>Approach: small iterations, measurable outcomes, maintainable code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Sytorra</p>
+  <!-- Services / What I Do -->
+  <section class="section alt" id="services" aria-label="What I Do">
+    <div class="container cards">
+      <div class="card">
+        <img src="assets/img/software_development.jpg" alt="Software development" loading="lazy" />
+        <h3>Software Engineering</h3>
+        <p>
+          Development of desktop utilities, C# WinForms/WPF applications, and small web backends.
+          I focus on building integrations, automation scripts, and tools that make workflows faster and more reliable.
+          Clean, maintainable code with a focus on practical delivery.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/embedded.jpg" alt="Embedded systems" loading="lazy" />
+        <h3>Embedded Systems</h3>
+        <p>
+          Experience with microcontrollers, low-level coding, and interfacing hardware components.
+          I design and build embedded solutions for real-time control, data collection, and device communication.
+          Reliability and efficiency are always top priority.
+        </p>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/iot.png" alt="IoT development" loading="lazy" />
+        <h3>IoT Development</h3>
+        <p>
+          Creating IoT solutions that connect devices, sensors, and platforms.
+          From prototyping with Raspberry Pi/Arduino to cloud integration,
+          I work on reliable communication systems (LoRa, MQTT, REST APIs) that bring data online securely.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="section" id="contact" aria-label="Contact">
+    <div class="container contact">
+      <h2>Contact</h2>
+      <p>If you'd like to connect, feel free to reach me directly:</p>
+      <p>Email: <a href="mailto:m.weijers@sytorra.com">m.weijers@sytorra.com</a></p>
+      <p>Based in the Netherlands</p>
+
+      <div class="socials">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/menno-weijers-86105b14b" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 
+                    2.239 5 5 5h14c2.762 0 5-2.239 
+                    5-5v-14c0-2.761-2.238-5-5-5zm-11 
+                    19h-3v-11h3v11zm-1.5-12.268c-.966 
+                    0-1.75-.79-1.75-1.764s.784-1.764 
+                    1.75-1.764 1.75.79 
+                    1.75 1.764-.784 1.764-1.75 
+                    1.764zm13.5 
+                    12.268h-3v-5.604c0-1.337-.025-3.059-1.865-3.059-1.867 
+                    0-2.154 1.459-2.154 
+                    2.967v5.696h-3v-11h2.881v1.507h.041c.401-.76 
+                    1.379-1.562 2.838-1.562 
+                    3.037 0 3.599 2.001 3.599 
+                    4.604v6.451z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Sytorra</small>
+    </div>
   </footer>
+
+  <script>
+    // auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
